@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahbaz khan | Shahvery</title>
+    <link rel="stylesheet" href="sharemodalapp.css">
+</head>
+<body>
+    
+<div class="wrapper">
+
+    <div class="circle2"></div>
+    
+        <div class="card-wrapper">
+            <div>
+                <img src="shahbaz.jpg">
+            </div>
+            <div class="user-name">
+                <h2>Shahbaz Khan</h2>
+            </div>
+            <div class="designation">
+                <h3>Founder Shahvery</h3>
+            </div>
+            <div class="button-group">
+                <button onclick="openmodal()" class="button1 btn-share btn-card">
+                    <i class="fa-solid fa-share"></i>
+                    <div>Share My Profile</div>
+                </button>
+                <button class="button2 btn-share btn-card">follow me</button>
+            </div>
+        </div>
+        <!--modal content-->
+ <div class="modal">
+    <div class="modal-header">
+        <h1>Share My Profile</h1>
+        <div>
+            <i onclick="closemodal()" class="fa-regular fa-circle-xmark"></i>
+        </div>
+    </div>
+    <div>
+        <h3>Share This Via</h3>
+        <div class="icon-container">
+            <a href="#" class="icon" id="facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" class="icon" id="twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="icon" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="icon" id="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#" class="icon" id="telegram">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+        </div>
+    </div>
+ </div>
+
+</div>
+  <!--overlay-->
+  <div onclick="closemodal()" class="overlay"></div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="sharemodalapp.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+body,html{
+    height: 100%;
+}
+.wrapper{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.circle2{
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50px;
+    right: 625px;
+    animation: shahbaz 3s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes shahbaz {
+    from {
+        bottom: 50px;
+        scale: 0;
+
+    }
+    to { 
+        bottom: 75px;
+        scale: 1;
+        box-shadow: 5px 10px 18px #888888;
+    }
+}
+.card-wrapper{
+display: flex;
+flex-direction: column;
+border: 1px solid gray;
+width: 20%;
+height: 50%;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.user-name{
+    color: white;
+
+}
+.designation{
+    color: white;
+}
+.button1{
+    display: flex;
+    background-color: gray;
+}
+.button2{
+    background-color: gray;
+}
+.button-group{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 1rem;
+}
+#instagram{
+    color:  #E4405F;
+    border: 1px solid#E4405F;
+    border-radius: 5px;
+}
+#instagram:hover{
+    background-color: #E4405F;
+    color: #fff;
+}
+#whatsapp{
+    color:#2fe664;
+    border:1px solid #2fe644;
+    border-radius: 5px;
+}
+#whatsapp:hover{
+    background-color: #2fe644;
+    color: #fff;
+}
+#telegram{
+    color: #229ED9;
+    border: 1px solid #1DA1f2;
+    border-radius: 5px;
+
+}
+#telegram:hover{
+    background-color:#229ED9;
+    color: #fff;
+}
+#twitter{
+    color: #1DA1f2;
+    border: 1px solid #1DA1f2;
+    border-radius: 5px;
+}
+#twitter:hover{
+    background-color: #1DA1f2;
+    color: #fff;
+}
+#facebook{
+    color: #1877f2;
+    border: 1px solid #1877f2;
+    border-radius: 5px;
+}
+#facebook:hover{
+    background-color: #1877f2;
+    color: #fff;
+}
+.modal{
+    position:fixed;
+border: 2px solid #ffffff59;
+width:500px;
+scale:0;
+background: #00000088;
+color:white;
+padding:20px 25px;
+border-radius: 20px;
+z-index:1;
+transition: 0.5s ease-in-out;
+backdrop-filter: blur(10px);
+}
+.active{
+    scale: 1;
+}
+.modal-header{
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ffffff88;
+}
+.overlay{
+    position: static;
+    scale: 0;
+    transition: 0.5s ease-in-out;
+    pointer-events: none;
+    background-color: #5f5f5f83;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.overlayactive{
+    scale: 1;
+    pointer-events: initial;
+}
+.icon-container{
+    display: flex;
+    justify-content: space-evenly;
+}
